@@ -7,7 +7,10 @@ terraform {
       version = "4.46.0"
     }
   }
+
+  backend "s3" {}
 }
+
 provider "aws" {
   region = var.aws_region
 }
